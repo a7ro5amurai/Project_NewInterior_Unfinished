@@ -1,0 +1,36 @@
+@mixin flexSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexColums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin tripleGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1vw;
+}
+@mixin sixGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    gap: 1vw;
+}
+
+@mixin transparentButtons {
+    color: white;
+    background-color: transparent;
+    padding: 1vh 2vw;
+    border: 1px solid white;
+
+    &:hover {
+        background-color: black;
+        transform: scale(1.1);
+    }
+}

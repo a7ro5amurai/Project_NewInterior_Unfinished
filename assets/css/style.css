@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  color: black;
+  background-color: white;
+  padding: 2vh 1.5vw;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 10vh;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+h3 {
+  font-size: 2.5vh;
+}
+
+p {
+  font-size: 1.5vh;
+}
+
+header {
+  padding: 3vh 2vw;
+  height: 100vh;
+  background-image: url(../img/header_02_livingRoom.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30vh;
+}
+header section h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+header section img {
+  cursor: pointer;
+}
+
+main section {
+  padding: 5vh 10vw;
+}
+main .headerFlex {
+  margin-bottom: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .headerFlex div h2 {
+  margin-bottom: 2vh;
+}
+main .sixGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  gap: 1vw;
+}
+main .sixGrid img {
+  width: 100%;
+}
+main .sixGrid div {
+  overflow: hidden;
+  position: relative;
+}
+main .sixGrid div div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  text-align: center;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sixGrid div div button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  justify-content: center;
+}
+main .sixGrid div:hover img {
+  transform: scale(1.5);
+  transition: 1s;
+}
+main .sixGrid div:hover .visible {
+  visibility: visible;
+}/*# sourceMappingURL=style.css.map */
